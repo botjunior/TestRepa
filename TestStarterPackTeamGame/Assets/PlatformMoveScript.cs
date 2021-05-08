@@ -19,9 +19,9 @@ public class PlatformMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(platform.transform.position, positions[counterplatfotmposition].position) > distance)
+        if (Vector3.Distance(this.gameObject.transform.position, positions[counterplatfotmposition].position) > distance)
         {
-            platform.transform.position = Vector3.MoveTowards(platform.transform.position, positions[counterplatfotmposition].position, (Vector3.Distance(platform.transform.position, positions[counterplatfotmposition].position)) / (speed * koef) * Time.deltaTime);
+            this.gameObject.transform.position = Vector3.MoveTowards(this.gameObject.transform.position, positions[counterplatfotmposition].position, (Vector3.Distance(this.gameObject.transform.position, positions[counterplatfotmposition].position)) / (speed * koef) * Time.deltaTime);
         }
         else
         {
@@ -30,4 +30,5 @@ public class PlatformMoveScript : MonoBehaviour
                 counterplatfotmposition = 0;
         }
     }
+
 }

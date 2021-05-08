@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\PlatformMoveScript.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
+    <Compile Include="Assets\Platform.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
